@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gandla Stone Industry | Premium Tandur Limestone & Natural Stones</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        stoneBrand: {
+                            slate: '#2C3539',
+                            dark: '#181C1F',
+                            accent: '#8C9B90',
+                            sand: '#D8D4C9',
+                            gold: '#C5A059'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['Cinzel', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-header {
+            background: rgba(24, 28, 31, 0.9);
+            backdrop-filter: blur(14px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(24, 28, 31, 0.92) 0%, rgba(44, 53, 57, 0.85) 100%);
+        }
+        /* Magnetic Card Effect Styling */
+        .magnetic-card {
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+        }
+        .magnetic-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 30px -10px rgba(140, 155, 144, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stoneBrand-dark font-sans antialiased selection:bg-stoneBrand-accent selection:text-white">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-header border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#home" class="flex items-center space-x-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-stoneBrand-accent flex items-center justify-center text-white font-serif font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
+                        GS
+                    </div>
+                    <div>
+                        <span class="text-lg sm:text-xl font-serif font-bold text-white tracking-wider">GANDLA <span class="text-stoneBrand-accent font-light">STONE</span></span>
+                        <p class="text-[9px] tracking-widest text-stone-300 uppercase">Premium Tandur Limestone Industry</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-stone-300 hover:text-white font-medium text-sm tracking-widest uppercase transition-colors">Home</a>
+                    <a href="#about" class="text-stone-300 hover:text-white font-medium text-sm tracking-widest uppercase transition-colors">About</a>
+                    <a href="#products" class="text-stone-300 hover:text-white font-medium text-sm tracking-widest uppercase transition-colors">Products</a>
+                    <a href="#finishes" class="text-stone-300 hover:text-white font-medium text-sm tracking-widest uppercase transition-colors">Finishes</a>
+                    <a href="#gallery" class="text-stone-300 hover:text-white font-medium text-sm tracking-widest uppercase transition-colors">Gallery</a>
+                    <a href="#contact" class="text-stone-300 hover:text-white font-medium text-sm tracking-widest uppercase transition-colors">Contact</a>
+                </nav>
+
+                <!-- Phone CTA -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="tel:8790713117" class="flex items-center space-x-2 bg-stoneBrand-accent hover:bg-stoneBrand-slate text-white px-5 py-2.5 rounded-full font-medium text-sm shadow-lg transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>87907-13117</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden text-white focus:outline-none p-2" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-stoneBrand-dark/95 border-b border-white/10 px-6 py-5 space-y-4 shadow-xl">
+            <a href="#home" class="block text-stone-200 hover:text-stoneBrand-accent font-medium uppercase text-sm tracking-wider mobile-link">Home</a>
+            <a href="#about" class="block text-stone-200 hover:text-stoneBrand-accent font-medium uppercase text-sm tracking-wider mobile-link">About</a>
+            <a href="#products" class="block text-stone-200 hover:text-stoneBrand-accent font-medium uppercase text-sm tracking-wider mobile-link">Products</a>
+            <a href="#finishes" class="block text-stone-200 hover:text-stoneBrand-accent font-medium uppercase text-sm tracking-wider mobile-link">Finishes</a>
+            <a href="#gallery" class="block text-stone-200 hover:text-stoneBrand-accent font-medium uppercase text-sm tracking-wider mobile-link">Gallery</a>
+            <a href="#contact" class="block text-stone-200 hover:text-stoneBrand-accent font-medium uppercase text-sm tracking-wider mobile-link">Contact</a>
+            <div class="pt-2">
+                <a href="tel:8790713117" class="flex items-center justify-center space-x-2 bg-stoneBrand-accent text-white py-3 rounded-xl font-medium text-sm">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call: 8790713117</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&q=80&w=1920');">
+        <div class="absolute inset-0 hero-gradient"></div>
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-24 z-10">
+            <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full text-stone-200 text-xs font-semibold tracking-widest uppercase mb-6 shadow-sm">
+                <i class="fa-solid fa-gem text-stoneBrand-accent"></i>
+                <span>Tandur Premium High Polish Material</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold text-white tracking-tight leading-tight mb-6">
+                Exquisite Tandur Limestone & <span class="text-stoneBrand-accent italic">Natural Stones</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-stone-300 max-w-2xl mx-auto font-light leading-relaxed mb-10">
+                Specializing in Satin, Leather, Calibration, and Lapatro finishes with customized sizes. Delivered securely across India with unmatched durability and architectural grace.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#products" class="w-full sm:w-auto bg-stoneBrand-accent hover:bg-stoneBrand-slate text-white font-semibold px-8 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1">
+                    Explore Our Products <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <a href="https://wa.me/918790713117?text=Hi%20Gandla%20Stone%20Industry,%20I%20want%20to%20inquire%20about%20Tandur%20Limestone%20materials." target="_blank" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md font-semibold px-8 py-4 rounded-full transition-all flex items-center justify-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>WhatsApp Inquiry</span>
+                </a>
+            </div>
+
+            <!-- Highlights -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-white/10 max-w-4xl mx-auto text-left">
+                <div class="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
+                    <p class="text-2xl font-serif font-bold text-stoneBrand-accent">PAN-INDIA</p>
+                    <p class="text-xs text-stone-300 uppercase mt-1">Safe Delivery</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
+                    <p class="text-2xl font-serif font-bold text-stoneBrand-accent">Custom</p>
+                    <p class="text-xs text-stone-300 uppercase mt-1">Sizes Available</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
+                    <p class="text-2xl font-serif font-bold text-stoneBrand-accent">High Polish</p>
+                    <p class="text-xs text-stone-300 uppercase mt-1">Premium Quality</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
+                    <p class="text-2xl font-serif font-bold text-stoneBrand-accent">4 Finishes</p>
+                    <p class="text-xs text-stone-300 uppercase mt-1">Satin, Leather, etc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl z-10">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18f02f8?auto=format&fit=crop&q=80&w=800" alt="Stone Quarry and Industry" class="w-full h-auto object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-72 h-72 bg-stoneBrand-accent/10 rounded-full blur-2xl"></div>
+                </div>
+                <div>
+                    <span class="text-stoneBrand-accent font-semibold text-xs tracking-widest uppercase block mb-3">About Gandla Stone Industry</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-stoneBrand-dark tracking-tight mb-6">
+                        Masters of Tandur Natural Limestone & Superior Finishes
+                    </h2>
+                    <p class="text-stone-600 text-base leading-relaxed mb-6">
+                        At <strong class="text-stoneBrand-dark">Gandla Stone Industry</strong>, we take pride in extracting and processing the finest quality Tandur limestone. Known for exceptional durability, uniform texture, and timeless appeal, our stone products are trusted by architects, builders, and homeowners across India.
+                    </p>
+                    <p class="text-stone-600 text-base leading-relaxed mb-8">
+                        We specialize in advanced cutting, calibration, and polishing techniques including Satin, Leather, Calibration, and Lapatro finishes tailored to your exact architectural requirements.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 rounded-full bg-stoneBrand-accent/20 flex items-center justify-center text-stoneBrand-slate flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stoneBrand-dark text-sm">Strict Quality Control</h4>
+                                <p class="text-stone-500 text-xs mt-1">Flawless thickness & polish.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 rounded-full bg-stoneBrand-accent/20 flex items-center justify-center text-stoneBrand-slate flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stoneBrand-dark text-sm">Bulk Supply Capacity</h4>
+                                <p class="text-stone-500 text-xs mt-1">Ready stock for large projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section with Magnetic Cards -->
+    <section id="products" class="py-24 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-stoneBrand-accent font-semibold text-xs tracking-widest uppercase block mb-3">Our Collection</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-stoneBrand-dark tracking-tight">Tandur Stone Products & Slabs</h2>
+                <div class="w-16 h-1 bg-stoneBrand-accent mx-auto mt-4 rounded-full"></div>
+                <p class="text-stone-600 mt-4 text-base sm:text-lg">
+                    Discover our premium high-polish limestone materials available in customised sizes.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="magnetic-card bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-200 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" alt="Tandur Grey Limestone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/8C9B90/ffffff?text=Tandur+Grey'">
+                        <span class="absolute bottom-4 left-4 bg-stoneBrand-dark text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Grey Limestone</span>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-serif font-bold text-stoneBrand-dark mb-3">Tandur Grey High Polish Slab</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                                Premium quality grey limestone ideal for flooring, wall cladding, and exterior paving. Highly durable with exceptional slip-resistance and fine finish.
+                            </p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center text-stoneBrand-slate font-semibold text-sm hover:text-stoneBrand-accent transition-colors">
+                            Request Quote <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="magnetic-card bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-200 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&q=80&w=800" alt="Tandur Green Limestone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/8C9B90/ffffff?text=Tandur+Green'">
+                        <span class="absolute bottom-4 left-4 bg-stoneBrand-dark text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Green Limestone</span>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-serif font-bold text-stoneBrand-dark mb-3">Tandur Green Limestone</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                                Natural green limestone renowned for its unique earthy tone and aesthetic richness. Perfect for luxury interiors, courtyards, and architectural patios.
+                            </p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center text-stoneBrand-slate font-semibold text-sm hover:text-stoneBrand-accent transition-colors">
+                            Request Quote <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="magnetic-card bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-200 flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&q=80&w=800" alt="Calibrated Limestone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/8C9B90/ffffff?text=Calibrated+Stone'">
+                        <span class="absolute bottom-4 left-4 bg-stoneBrand-dark text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Calibrated Slabs</span>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-serif font-bold text-stoneBrand-dark mb-3">Calibrated & Custom Sized Material</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                                Precisely calibrated uniform thickness tiles and slabs cutting down installation time and effort. Available in custom dimensions as per your project needs.
+                            </p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center text-stoneBrand-slate font-semibold text-sm hover:text-stoneBrand-accent transition-colors">
+                            Request Quote <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Finishes Section -->
+    <section id="finishes" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-stoneBrand-accent font-semibold text-xs tracking-widest uppercase block mb-3">Surface Craftsmanship</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-stoneBrand-dark tracking-tight">Special Finishes We Offer</h2>
+                <div class="w-16 h-1 bg-stoneBrand-accent mx-auto mt-4 rounded-full"></div>
+                <p class="text-stone-600 mt-4 text-base sm:text-lg">
+                    Transforming natural stone surfaces with state-of-the-art texturing technologies.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Finish 1 -->
+                <div class="bg-stone-50 p-8 rounded-2xl border border-stone-200 text-center hover:border-stoneBrand-accent transition-colors">
+                    <div class="w-14 h-14 rounded-2xl bg-stoneBrand-accent/10 flex items-center justify-center text-stoneBrand-slate mx-auto mb-6 text-2xl">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-stoneBrand-dark mb-3">Satin Finish</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Smooth, velvety touch with a subtle matte sheen that enhances the natural grain and color depth of the stone.
+                    </p>
+                </div>
+
+                <!-- Finish 2 -->
+                <div class="bg-stone-50 p-8 rounded-2xl border border-stone-200 text-center hover:border-stoneBrand-accent transition-colors">
+                    <div class="w-14 h-14 rounded-2xl bg-stoneBrand-accent/10 flex items-center justify-center text-stoneBrand-slate mx-auto mb-6 text-2xl">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-stoneBrand-dark mb-3">Leather Finish</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Textured tactile finish that mimics soft leather while retaining the raw strength and durability of Tandur limestone.
+                    </p>
+                </div>
+
+                <!-- Finish 3 -->
+                <div class="bg-stone-50 p-8 rounded-2xl border border-stone-200 text-center hover:border-stoneBrand-accent transition-colors">
+                    <div class="w-14 h-14 rounded-2xl bg-stoneBrand-accent/10 flex items-center justify-center text-stoneBrand-slate mx-auto mb-6 text-2xl">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-stoneBrand-dark mb-3">Calibration</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Precisely calibrated thickness across all tiles for effortless laying and perfectly leveled flooring surfaces.
+                    </p>
+                </div>
+
+                <!-- Finish 4 -->
+                <div class="bg-stone-50 p-8 rounded-2xl border border-stone-200 text-center hover:border-stoneBrand-accent transition-colors">
+                    <div class="w-14 h-14 rounded-2xl bg-stoneBrand-accent/10 flex items-center justify-center text-stoneBrand-slate mx-auto mb-6 text-2xl">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-stoneBrand-dark mb-3">Lapatro Finish</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Semi-polished textured finish combining honed matte areas with reflective highlights for a stunning contemporary look.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-stoneBrand-accent font-semibold text-xs tracking-widest uppercase block mb-3">Quarry & Stock Gallery</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-stoneBrand-dark tracking-tight">Our Slabs & Ready Stock</h2>
+                <div class="w-16 h-1 bg-stoneBrand-accent mx-auto mt-4 rounded-full"></div>
+                <p class="text-stone-600 mt-4 text-base sm:text-lg">
+                    A look at our stacks, yard inventory, and high-precision polished Tandur stone materials.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="relative group overflow-hidden rounded-2xl shadow-md h-80 bg-stone-300">
+                    <img src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&q=80&w=800" alt="Stone Stock Stacks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-stoneBrand-accent text-xs font-semibold uppercase tracking-wider">Ready Stock</span>
+                        <h4 class="text-white text-lg font-serif font-bold">Stacked Tandur Limestone Slabs</h4>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl shadow-md h-80 bg-stone-300">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18f02f8?auto=format&fit=crop&q=80&w=800" alt="Quarry Material" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-stoneBrand-accent text-xs font-semibold uppercase tracking-wider">Quarry Grade</span>
+                        <h4 class="text-white text-lg font-serif font-bold">Natural Stone Extraction & Yard</h4>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl shadow-md h-80 bg-stone-300">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" alt="Polished Tiles" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-stoneBrand-accent text-xs font-semibold uppercase tracking-wider">High Polish</span>
+                        <h4 class="text-white text-lg font-serif font-bold">Finished & Calibrated Slabs</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-stoneBrand-accent font-semibold text-xs tracking-widest uppercase block mb-3">Get in Touch</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-stoneBrand-dark tracking-tight">Order & Inquiry Desk</h2>
+                <div class="w-16 h-1 bg-stoneBrand-accent mx-auto mt-4 rounded-full"></div>
+                <p class="text-stone-600 mt-4 text-base sm:text-lg">
+                    Contact us for bulk orders, customized size requirements, and Pan-India delivery.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Info boxes -->
+                <div class="space-y-6 lg:col-span-1">
+                    <div class="bg-stone-50 p-6 rounded-2xl border border-stone-200 flex items-start space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-stoneBrand-accent/10 flex items-center justify-center text-stoneBrand-slate text-xl flex-shrink-0">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-stoneBrand-dark text-lg mb-1">Call Us</h4>
+                            <p class="text-stone-500 text-xs mb-2">Speak with our sales team</p>
+                            <a href="tel:8790713117" class="text-stoneBrand-slate font-bold text-base hover:underline">+91 87907 13117</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-stone-50 p-6 rounded-2xl border border-stone-200 flex items-start space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-stoneBrand-accent/10 flex items-center justify-center text-stoneBrand-slate text-xl flex-shrink-0">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-stoneBrand-dark text-lg mb-1">Delivery</h4>
+                            <p class="text-stone-500 text-xs mb-2">Shipping coverage</p>
+                            <span class="text-stoneBrand-dark font-medium text-base">Delivery Across India</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-stone-50 p-6 rounded-2xl border border-stone-200 flex items-start space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-stoneBrand-accent/10 flex items-center justify-center text-stoneBrand-slate text-xl flex-shrink-0">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-stoneBrand-dark text-lg mb-1">Instagram</h4>
+                            <p class="text-stone-500 text-xs mb-2">Follow our latest stock</p>
+                            <a href="https://instagram.com/gandla_stone" target="_blank" class="text-stoneBrand-slate font-bold text-base hover:underline">@gandla_stone</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form -->
+                <div class="bg-stone-50 p-8 sm:p-10 rounded-2xl border border-stone-200 lg:col-span-2 shadow-sm">
+                    <form id="stone-form" onsubmit="handleStoneFormSubmit(event)" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">Your Name</label>
+                                <input type="text" id="cust-name" required class="w-full bg-white border border-stone-300 rounded-xl px-4 py-3.5 text-sm text-stoneBrand-dark focus:outline-none focus:border-stoneBrand-accent transition-colors" placeholder="Enter your name">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">Phone Number</label>
+                                <input type="tel" id="cust-phone" required class="w-full bg-white border border-stone-300 rounded-xl px-4 py-3.5 text-sm text-stoneBrand-dark focus:outline-none focus:border-stoneBrand-accent transition-colors" placeholder="Enter phone number">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">Product / Stone Type</label>
+                                <select id="cust-product" class="w-full bg-white border border-stone-300 rounded-xl px-4 py-3.5 text-sm text-stoneBrand-dark focus:outline-none focus:border-stoneBrand-accent transition-colors">
+                                    <option value="Tandur Grey Limestone">Tandur Grey Limestone</option>
+                                    <option value="Tandur Green Limestone">Tandur Green Limestone</option>
+                                    <option value="Calibrated Slabs">Calibrated Slabs</option>
+                                    <option value="Custom Sized Material">Custom Sized Material</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">Preferred Finish</label>
+                                <select id="cust-finish" class="w-full bg-white border border-stone-300 rounded-xl px-4 py-3.5 text-sm text-stoneBrand-dark focus:outline-none focus:border-stoneBrand-accent transition-colors">
+                                    <option value="Satin">Satin Finish</option>
+                                    <option value="Leather">Leather Finish</option>
+                                    <option value="Calibration">Calibration</option>
+                                    <option value="Lapatro">Lapatro Finish</option>
+                                    <option value="High Polish">High Polish Standard</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">Project Requirements / Delivery Location</label>
+                            <textarea id="cust-message" rows="4" class="w-full bg-white border border-stone-300 rounded-xl px-4 py-3.5 text-sm text-stoneBrand-dark focus:outline-none focus:border-stoneBrand-accent transition-colors" placeholder="Mention dimensions, quantity needed, or delivery destination..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-stoneBrand-dark hover:bg-stoneBrand-slate text-white font-semibold py-4 rounded-xl shadow-lg transition-all text-sm tracking-wider uppercase">
+                            Send Order Inquiry via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Call and WhatsApp Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <a href="tel:8790713117" class="w-14 h-14 bg-stoneBrand-dark hover:bg-stoneBrand-slate text-white rounded-full flex items-center justify-center shadow-2xl transition-all transform hover:scale-110" aria-label="Call Us">
+            <i class="fa-solid fa-phone text-2xl"></i>
+        </a>
+        <a href="https://wa.me/918790713117?text=Hi%20Gandla%20Stone%20Industry,%20I%20would%20like%20to%20discuss%20natural%20stone%20requirements." target="_blank" class="w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-2xl transition-all transform hover:scale-110" aria-label="WhatsApp Us">
+            <i class="fa-brands fa-whatsapp text-3xl"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-stoneBrand-dark text-stone-400 py-16 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-1">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-9 h-9 rounded-xl bg-stoneBrand-accent flex items-center justify-center text-white font-serif font-bold text-lg">
+                            GS
+                        </div>
+                        <span class="text-xl font-serif font-bold text-white tracking-wide">GANDLA <span class="text-stoneBrand-accent font-light">STONE</span></span>
+                    </div>
+                    <p class="text-xs text-stone-400 leading-relaxed mb-4">
+                        Tandur Premium High Polish Material with Customised Sizes. Satin, Leather, Calibration, and Lapatro finishes.
+                    </p>
+                    <p class="text-xs text-stoneBrand-accent font-semibold">Delivery Across India</p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-serif font-bold text-base mb-4 tracking-wide">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-stoneBrand-accent transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-stoneBrand-accent transition-colors">About Us</a></li>
+                        <li><a href="#products" class="hover:text-stoneBrand-accent transition-colors">Products</a></li>
+                        <li><a href="#finishes" class="hover:text-stoneBrand-accent transition-colors">Finishes</a></li>
+                        <li><a href="#contact" class="hover:text-stoneBrand-accent transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-serif font-bold text-base mb-4 tracking-wide">Finishes & Sizes</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><span class="text-stone-400">Satin Finish</span></li>
+                        <li><span class="text-stone-400">Leather Finish</span></li>
+                        <li><span class="text-stone-400">Calibration</span></li>
+                        <li><span class="text-stone-400">Lapatro Finish</span></li>
+                        <li><span class="text-stone-400">Customized Dimensions</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-serif font-bold text-base mb-4 tracking-wide">Connect</h4>
+                    <p class="text-xs text-stone-400 mb-4">Check our latest inventory videos and updates on Instagram.</p>
+                    <a href="https://instagram.com/gandla_stone" target="_blank" class="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white px-4 py-2.5 rounded-xl text-xs font-semibold shadow-md hover:opacity-95 transition-opacity">
+                        <i class="fa-brands fa-instagram text-base"></i>
+                        <span>@gandla_stone</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500">
+                <p>&copy; 2026 Gandla Stone Industry. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 sm:mt-0">
+                    <span>Contact: +91 8790713117</span>
+                    <span>Pan-India Delivery</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form Submission handler with WhatsApp redirect
+        function handleStoneFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('cust-name').value;
+            const phone = document.getElementById('cust-phone').value;
+            const product = document.getElementById('cust-product').value;
+            const finish = document.getElementById('cust-finish').value;
+            const message = document.getElementById('cust-message').value;
+
+            const whatsappText = `Hello Gandla Stone Industry,%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Product:* ${encodeURIComponent(product)}%0A*Finish:* ${encodeURIComponent(finish)}%0A*Details:* ${encodeURIComponent(message)}`;
+            
+            window.open(`https://wa.me/918790713117?text=${whatsappText}`, '_blank');
+        }
+    </script>
+</body>
+</html>
